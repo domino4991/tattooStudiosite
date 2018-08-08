@@ -1,0 +1,21 @@
+{
+  "name": "homework_30_kochkin_vlad",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs_for_project",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jeet": "^7.2.0",
+    "normalize.css": "^8.0.0",
+    "owl.carousel": "owl-carousel2#^2.3.4"
+  }
+}

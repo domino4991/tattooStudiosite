@@ -1,0 +1,4 @@
+mixin linkList(className, links, icons)
+	ul(class= className + "__list")
+		each link in links
+			li(class= className + "__item"): a(class= className + "__link", href="#") #{link}
