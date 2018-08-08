@@ -1,16 +1,28 @@
 .header
 	background: #191919
 	padding-top: 35px
+	padding-bottom: 130px
 
 .logo
 	display: flex
 	justify-content: space-between
+	flex-wrap: wrap
+
+.logo__item
+	width: 21%
+	text-align: right
+
+.logo-center
+	width: 38%
+	text-align: center
 
 .tel
 	color: #fff
 	margin-top: 9%
 	+use-latoFont(rem(24px))
 	font-weight: 300
+	margin: 0
+	padding-top: 90px
 
 .logo__link
 	width: 39%
@@ -22,17 +34,32 @@
 	display: block
 	margin-top: -65px
 
-.social__link
-	margin-top: 7%
-	display: inline-table
-	padding: 5px
-	background: #ffffff
-	border-radius: 50%
-
 .fa-vk
+	margin-top: 30%
+	margin-right: 5px
 	background: #fff
 	color: #191919
 	font-size: rem(30px)
 	padding: 15px 15px
 	border-radius: 50%
 	border: 2px solid #000
+	box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 1)
+
+.nav__list
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	margin: 0
+	padding: 0
+
+.nav__item
+	list-style: none
+
+.nav__link
+	text-decoration: none
+	+use-latoFont(rem(19px), #fff, 400)
+	text-transform: uppercase
+	padding: 15px
+	transition: .3s ease
+	&:hover
+		color: #c7c6c6

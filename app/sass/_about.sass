@@ -1,0 +1,62 @@
+.about
+    background: #191919
+    clip-path: polygon(0px -10%,100% 20%,100% 100%,0 70%)
+    margin-top: -180px
+
+.about-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.about__item
+    width: 49%
+    padding: 70px 0 220px 0
+
+.about__caption
+    +use-latoFont(rem(44px), #fff, 600)
+    text-transform: uppercase
+    margin: 0
+    padding-top: 70px
+
+.caption-span
+    font-weight: 100
+    display: block
+
+.about__desc
+    +use-latoFont(rem(15px), #888888, 100)
+    text-align: justify
+    margin: 0
+
+.desc-link
+    text-decoration: none
+    color: #d2d2d2
+    &:hover
+        text-decoration: underline
+
+.about__item img
+    width: 180px
+    height: 145px
+
+.about__img
+    display: inline-block
+    float: left
+
+.desc-item2,
+.location,
+.schedule
+    margin-left: 200px
+
+.desc-item2
+    text-align: left
+
+.location
+    margin-top: 30px
+
+.schedule
+    margin-top: 20px
+
+.fa-map-marker
+    margin-right: 10px
+
+.fa-clock-o
+    margin-right: 5px
