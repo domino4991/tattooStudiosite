@@ -1,0 +1,88 @@
+.artists
+    margin-top: -100px
+    
+.artists__info
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.info-item
+    width: 49%
+
+.artists__photo
+    height: 500px
+
+.artists__name
+    +use-latoFont(rem(48px), #191919, 600)
+    text-transform: uppercase
+    margin: 0
+    padding-top: 100px
+
+.name-span
+    font-weight: 100
+    display: block
+
+.artists__bio
+    +use-latoFont(rem(15px), #888888, 100)
+    margin: 0
+    padding-top: 35px
+    padding-bottom: 30px
+
+.artists__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-linkedin-square,
+.fa-instagram
+    color: #888888
+    font-size: rem(21px)
+    margin-right: 25px
+    transition: .3s ease
+
+.fa-facebook-square:hover
+    color: #3b5998
+
+.fa-twitter-square:hover
+    color: #25b2df
+
+.fa-linkedin-square:hover
+    color: #017eb4
+
+.fa-instagram:hover
+    color: #416f96
+
+.all-artists-item
+    height: 180px
+
+.all-artists-img
+    height: 100%
+    object-fit: cover
+
+.photo-item
+    position: relative
+    height: 180px
+
+.photo__desc
+    +use-greatVibesFont(rem(26px), #dfdfdf)
+    opacity: 0
+    margin: 0
+    padding-top: 50px
+    text-align: center
+    transition: .5s ease
+
+.desc-item
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transition: .5s ease
+
+.photo-item:hover .desc-item
+    background: rgba(0, 0, 0, .7)
+
+.photo-item:hover .photo__desc
+    opacity: 1
