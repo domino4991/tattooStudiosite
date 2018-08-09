@@ -3,11 +3,15 @@ $(function() {
       items: 1,
       dots: true
   })
-  $('.all-artists').owlCarousel({
-    items: 6,
-    nav: true,
-    dots: false,
-    loop: true
+  
+  $('.artists__info').owlCarousel({
+    items: 1,
+    center: true,
+    dots: true,
+    nav: false,
+    dotsContainer: '.all-artists'
   })
-  $('.all-artists').find('.owl-item').addClass('all-artists-item');
+  $('.photo-item').click(function(){
+    $('.artists__info').trigger('to.owl.carousel', [$(this).index(), 300]);  
+   })
 })
