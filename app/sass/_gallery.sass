@@ -15,9 +15,43 @@
 
 .gallery__items
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     flex-wrap: wrap
     img
-        width: 270px
-        height: 338px
-        padding-top: 48px
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.gallery__item
+    width: 23%
+    margin-top: 25px
+    margin-right: 10px
+    position: relative
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        opacity: 0
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, .7)
+        transition: .5s ease
+    &:after
+        content: '\f00e'
+        font-family: 'FontAwesome'
+        position: absolute
+        top: 50%
+        margin-top: -18.5px
+        display: block
+        opacity: 0
+        left: 50%
+        margin-left: -17px
+        color: #dfdfdf
+        font-size: 36px
+        transition: .5s ease
+
+.gallery__item:hover:before,
+.gallery__item:hover:after
+    opacity: 1

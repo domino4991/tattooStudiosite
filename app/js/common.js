@@ -14,4 +14,6 @@ $(function() {
   $('.photo-item').click(function(){
     $('.artists__info').trigger('to.owl.carousel', [$(this).index(), 300]);  
    })
-})
+
+   $('.gallery__item').lightcase();
+});
