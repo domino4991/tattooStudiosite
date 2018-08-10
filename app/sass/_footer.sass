@@ -1,0 +1,57 @@
+.footer
+  background: #191919
+  overflow: hidden
+  margin-top: -50px
+  padding-top: 95px
+  padding-bottom: 43px
+  -webkit-clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%)
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%)
+
+.footer-flex
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.flex__item
+  width: 20%
+
+.f-item2
+  width: 55%
+
+.flex__item:last-child
+  text-align: right
+
+.footer__logo
+  +use-greatVibesFont(rem(72px), #ffffff, 400)
+  margin: 0
+
+.footer-span
+  display: block
+  margin-top: -40px
+
+.footer__list
+  margin: 0
+  padding: 0
+
+.list__item
+  list-style: none
+  display: inline-block
+  margin-right: 20px
+
+.footer__desc
+  padding-top: 35px
+
+.footer__desc,
+.list__item,
+.link-author
+  +use-latoFont(rem(15px), #888888, 400)
+
+.link-author
+  text-decoration: none
+  transition: .5s ease
+  &:hover
+    color: #c7c7c7
+
+.footer-fa
+  margin-top: 40px
+  text-align: center

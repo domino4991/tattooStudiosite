@@ -1,0 +1,47 @@
+.contacts
+  margin-top: -140px
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 95%)
+  clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 95%)
+
+.contacts-flex
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.contacts__item
+  width: 49%
+
+.contacts__caption
+  +use-latoFont(rem(48px), #191919, 600)
+  text-transform: uppercase
+  margin: 0
+  padding-top: 105px
+
+.contacts-span
+  font-weight: 100
+  display: block
+
+.contacts__desc
+  +use-latoFont(rem(15px), #888888, 100)
+  margin: 0
+  padding-top: 35px
+
+.desc__link
+  +use-latoFont(rem(15px), #888888, 100)
+  text-decoration: none
+  transition: .4s ease
+  &:hover
+    font-weight: 600
+    color: #515151
+
+.contacts__tel
+  +use-latoFont(rem(24px), #888888, 100)
+
+.contacts__email
+  +use-latoFont(rem(24px), #191919, 100)
+  text-decoration: none
+
+.contacts__img
+  width: 100%
+  height: 100%
+  object-fit: cover
