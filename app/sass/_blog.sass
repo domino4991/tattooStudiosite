@@ -1,0 +1,48 @@
+.blog
+    overflow: hidden
+    background: #191919
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
+    margin-top: 100px
+    padding-top: 100px
+    padding-bottom: 250px
+
+.blog__caption
+    +use-latoFont(rem(48px), #ffffff, 600)
+    text-transform: uppercase
+    margin: 0
+    text-align: center
+    padding-bottom: 33px
+
+.blog-span
+    font-weight: 100
+    display: block
+
+.blog__mini
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.mini__item
+    width: 30%
+    height: 250px
+    background: #888
+    position: relative
+
+.blog__link
+    background: rgba(25, 25, 25, .5)
+    +use-latoFont(rem(16px), #dfdfdf, 400)
+    text-decoration: none
+    text-transform: uppercase
+    padding: 20px 5px
+    display: block
+    text-align: center
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+
+.blog__img
+    width: 100%
+    height: 100%
+    object-fit: cover
