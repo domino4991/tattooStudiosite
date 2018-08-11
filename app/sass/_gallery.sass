@@ -1,11 +1,20 @@
+.gallery
+    +media(tablet)
+        margin-top: -50px
+    
 .gallery__caption
     +use-latoFont(rem(48px), #191919, 600)
     text-transform: uppercase
     margin-bottom: 0
+    +media(tablet)
+        font-size: rem(30px)
+        text-align: center
 
 .gallery-span
     font-weight: 100
     display: block
+    +media(tablet)
+        font-size: rem(24px)
 
 .gallery__desc
     +use-latoFont(rem(15px), #888888, 100)
@@ -27,6 +36,10 @@
     margin-top: 25px
     margin-right: 10px
     position: relative
+    +media(tablet)
+        width: 48%
+    +media(interval3)
+        width: 100%
     &:before
         content: ''
         display: block

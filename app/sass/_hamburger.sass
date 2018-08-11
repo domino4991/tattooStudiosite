@@ -1,3 +1,8 @@
+.hamburger-menu
+  position: absolute
+  top: 4%
+  right: 0
+  
 .hamburger
   padding: 15px 15px
   display: none
@@ -11,7 +16,6 @@
   background-color: transparent
   border: 0
   margin: 0
-  margin-top: 23px
   overflow: visible
   outline: none
   position: relative
@@ -81,3 +85,6 @@
       top: -80px
       transform: translate3d(-80px, 80px, 0) rotate(-45deg)
       transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1)
+
+.is-active
+  z-index: 777

@@ -13,15 +13,36 @@
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%)
     clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%)
 
-.owl-dots
-    transform: translateY(-210px)
-    text-align: center
-
-.owl-dot
-    background: #505050
-    padding: 10px
-    margin-right: 5px
+.owl-prev,
+.owl-next
+    position: absolute
+    top: 50%
+    margin-top: -35px
+    background: rgba(0, 0, 0, 0.7)
+    border: none
+    padding: 25px
     border-radius: 50%
-    border: 2px solid #ffffff
-    &:focus
-        background: #191919
+    transition: .5s ease
+    +media(interval3)
+        padding: 15px
+    &:hover
+        background: rgba(0, 0, 0, 1)
+
+.owl-prev
+    left: 2%
+
+.owl-next
+    right: 2%
+
+.fa-arrow-left,
+.fa-arrow-right
+    font-size: 24px
+    color: rgba(255, 255, 255, 0.6)
+    transition: .5s ease
+    +media(interval3)
+        font-size: 14px
+
+.owl-prev:hover .fa-arrow-left,
+.owl-next:hover .fa-arrow-right
+    color: rgba(255, 255, 255, 1)
+    transform: scale(1.1)

@@ -6,8 +6,9 @@ $capColor: #222222
 $phone: 380px
 $interval3: 480px
 $tablet: 768px
-$interval: 960px
+$interval: 866px
 $interval2: 1090px
+$interval4: 1170px
 $laptop: 1200px
 $desctop: 1390px
 
@@ -29,6 +30,10 @@ $desctop: 1390px
 
 	@else if $media == interval3
 		@media only screen and (max-width: $interval3)
+			@content
+
+	@else if $media == interval4
+		@media only screen and (max-width: $interval4)
 			@content
 
 	@else if $media == laptop

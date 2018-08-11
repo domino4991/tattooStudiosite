@@ -6,6 +6,12 @@
   padding-bottom: 43px
   -webkit-clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%)
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%)
+  +media(interval)
+    -webkit-clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0 100%)
+    clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0 100%)
+    margin-top: -100px
+  +media(phone)
+    margin-top: -170px
 
 .footer-flex
   display: flex
@@ -14,12 +20,19 @@
 
 .flex__item
   width: 20%
+  +media(interval)
+    width: 100%
+    text-align: center
 
 .f-item2
   width: 55%
+  +media(interval)
+    width: 100%
 
 .flex__item:last-child
   text-align: right
+  +media(interval)
+    text-align: center
 
 .footer__logo
   +use-greatVibesFont(rem(72px), #ffffff, 400)
@@ -37,6 +50,8 @@
   list-style: none
   display: inline-block
   margin-right: 20px
+  +media(interval3)
+    margin-top: 10px
 
 .footer__desc
   padding-top: 35px
@@ -55,3 +70,5 @@
 .footer-fa
   margin-top: 40px
   text-align: center
+  +media(interval2)
+    margin-top: 40px

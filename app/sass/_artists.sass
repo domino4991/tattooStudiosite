@@ -10,6 +10,8 @@
 
 .info-item
     width: 49%
+    +media(tablet)
+        width: 100%
 
 .artists__photo
     height: 500px
@@ -19,6 +21,9 @@
     text-transform: uppercase
     margin: 0
     padding-top: 100px
+    +media(tablet)
+        text-align: center
+        font-size: rem(30px)
 
 .name-span
     font-weight: 100
@@ -35,9 +40,14 @@
     height: 100%
     object-fit: cover
 
+.social-block
+    +media(tablet)
+        text-align: center
+        margin-bottom: 20px
+
 .fa-facebook-square,
 .fa-twitter-square,
-.fa-linkedin-square,
+.fa-pinterest-square,
 .fa-instagram
     color: #888888
     font-size: rem(21px)
@@ -56,9 +66,15 @@
 .fa-instagram:hover
     color: #416f96
 
+.fa-pinterest-square:hover
+    color: #C92228
+
 .all-artists
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+    +media(interval4)
+        justify-content: center
 
 .all-artists-img
     width: 100%
@@ -69,6 +85,10 @@
     position: relative
     height: 180px
     width: 195px
+    +media(interval4)
+        width: 33%
+    +media(interval3)
+        width: 50%
 
 .photo__desc
     +use-greatVibesFont(rem(26px), #dfdfdf)
@@ -77,6 +97,9 @@
     padding-top: 50px
     text-align: center
     transition: .5s ease
+
+.photo-span
+    display: block
 
 .desc-item
     position: absolute

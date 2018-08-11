@@ -1,38 +1,55 @@
 .blog
-    overflow: hidden
-    background: #191919
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
-    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
-    margin-top: 100px
-    padding-top: 100px
-    padding-bottom: 250px
-    position: relative
-    z-index: 6
+	overflow: hidden
+	background: #191919
+	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
+	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 80%)
+	margin-top: 100px
+	padding-top: 100px
+	padding-bottom: 250px
+	position: relative
+	z-index: 6
+	+media(phone)
+		margin-top: 0
 
 .blog__caption
-    +use-latoFont(rem(48px), #ffffff, 600)
-    text-transform: uppercase
-    margin: 0
-    text-align: center
-    padding-bottom: 33px
+	+use-latoFont(rem(48px), #ffffff, 600)
+	text-transform: uppercase
+	margin: 0
+	text-align: center
+	padding-bottom: 33px
+	+media(tablet)
+		font-size: rem(30px)
 
 .blog-span
     font-weight: 100
     display: block
 
 .blog__mini
-    display: flex
-    justify-content: space-around
-    flex-wrap: wrap
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	+media(interval2)
+		display: block
 
 .mini__item
-    width: 30%
-    height: 250px
-    background: #888
-    position: relative
+	width: 30%
+	height: 250px
+	background: #888
+	position: relative
+	+media(interval2)
+		width: 35%
+		height: 300px
+		margin: 10px auto 0 auto
+	+media(tablet)
+		width: 70%
+	+media(interval3)
+		width: 100%
+		height: 330px
 
 .mi-item2
 	padding: 0px 15px
+	+media(interval2)
+		padding: 0
 
 .blog__link
     background: rgba(25, 25, 25, .5)
@@ -56,15 +73,28 @@
 	background: rgba(0, 0, 0, .6)
 	width: 100%
 	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	padding: 0 0 0 10px
+	+media(interval2)
+		padding: 0
 
 .mini-item__caption,
 .mini-item__desc,
 .mini-item__readMore
 	color: #dfdfdf
 	+use-latoFont(rem(16px))
+	margin-left: 10px
+	+media(phone)
+		font-size: rem(14px)
 
 .mini-item__caption
 	text-transform: uppercase
+	margin: 0
+	padding: 10px 0 0 10px
+	+media(tablet)
+		padding: 40px 0 20px 10px
 
 .mini-item__desc
 	font-size: rem(15px)
@@ -77,6 +107,9 @@
 	padding-top: 35px
 	text-transform: uppercase
 	margin: 0
+	margin-left: 10px
+	+media(phone)
+		font-size: rem(13px)
 
 .mini-item__readMore
 	text-decoration: none

@@ -2,6 +2,12 @@
   margin-top: -140px
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 95%)
   clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 95%)
+  +media(interval2)
+    margin-top: -245px
+  +media(tablet)
+    margin-top: -245px
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%)
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%)
 
 .contacts-flex
   display: flex
@@ -10,12 +16,21 @@
 
 .contacts__item
   width: 49%
+  +media(tablet)
+    width: 100%
+    text-align: center
+    margin-bottom: 15px
+  +media(phone)
+    margin-bottom: 80px
+
 
 .contacts__caption
   +use-latoFont(rem(48px), #191919, 600)
   text-transform: uppercase
   margin: 0
   padding-top: 105px
+  +media(tablet)
+    font-size: rem(30px)
 
 .contacts-span
   font-weight: 100
@@ -45,3 +60,5 @@
   width: 100%
   height: 100%
   object-fit: cover
+  +media(phone)
+    display: none

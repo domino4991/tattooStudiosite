@@ -1,9 +1,19 @@
 .about
     background: #191919
+    -webkit-clip-path: polygon(0px -10%,100% 20%,100% 100%,0 70%)
     clip-path: polygon(0px -10%,100% 20%,100% 100%,0 70%)
     margin-top: -180px
     position: relative
     z-index: 2
+    +media(interval)
+        -webkit-clip-path: polygon(0px -10%,100% 20%,100% 100%,0 80%)
+        clip-path: polygon(0px -10%,100% 20%,100% 100%,0 80%)
+        padding-top: 100px
+        padding-bottom: 220px
+    +media(tablet)
+        -webkit-clip-path: polygon(0px -10%,100% 0%,100% 100%,0 80%)
+        clip-path: polygon(0px -10%,100% 0%,100% 95%,0 90%)
+        padding-bottom: 140px
 
 .about-flex
     display: flex
@@ -13,12 +23,19 @@
 .about__item
     width: 49%
     padding: 70px 0 220px 0
+    +media(interval)
+        width: 100%
+        padding: 0
 
 .about__caption
     +use-latoFont(rem(44px), #fff, 600)
     text-transform: uppercase
     margin: 0
     padding-top: 70px
+    +media(interval)
+        text-align: center
+    +media(tablet)
+        font-size: 30px
 
 .caption-span
     font-weight: 100
@@ -38,15 +55,19 @@
 .about__item img
     width: 180px
     height: 145px
-
-.about__img
     display: inline-block
     float: left
+    +media(tablet)
+        float: none
+        display: block
+        margin: 15px auto
 
 .desc-item2,
 .location,
 .schedule
     margin-left: 200px
+    +media(tablet)
+        margin-left: 0
 
 .desc-item2
     text-align: left

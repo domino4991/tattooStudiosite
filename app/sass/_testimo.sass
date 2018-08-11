@@ -6,14 +6,22 @@
     margin-top: -80px
     padding-top: 150px
     padding-bottom: 150px
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%)
-    clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%)
+    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 80%, 0 100%)
+    clip-path: polygon(0 12%, 100% 0, 100% 80%, 0 100%)
+    +media(interval)
+        -webkit-clip-path: polygon(0 10%, 100% 5%, 100% 80%, 0 90%)
+        clip-path: polygon(0 10%, 100% 5%, 100% 80%, 0 90%)
+    +media(tablet)
+        -webkit-clip-path: polygon(0 8%, 100% 5%, 100% 84%, 0 90%)
+        clip-path: polygon(0 8%, 100% 5%, 100% 84%, 0 90%)
 
 .testim__caption
     +use-latoFont(rem(48px), #ffffff, 600)
     margin: 0
     text-transform: uppercase
     padding-bottom: 25px
+    +media(tablet)
+        font-size: 30px
 
 .testim-span
     font-weight: 100
@@ -22,11 +30,15 @@
 .testim__quote
     +use-greatVibesFont(rem(48px), #888888)
     margin: 0
+    +media(tablet)
+        font-size: 24px
 
 .testim__name
     +use-latoFont(rem(15px), #888888, 100)
     margin: 0
     padding-top: 25px
+    +media(interval)
+        margin-bottom: 25px
 
 .entry__link
     +use-latoFont(rem(21px), #ffffff, 100)
@@ -38,3 +50,5 @@
     background: #888888
     border: 1px solid #ffffff
     border-radius: 5px
+    +media(interval)
+        float: none

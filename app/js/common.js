@@ -1,7 +1,10 @@
 $(function() {
   $('.banner').owlCarousel({
       items: 1,
-      dots: true
+      loop: true,
+      nav: true,
+      navText: ["<i class='fa fa-arrow-left' aria-hidden='true'></i>", "<i class='fa fa-arrow-right' aria-hidden='true'></i>"],
+      dots: false
   })
   
   $('.artists__info').owlCarousel({
@@ -16,4 +19,10 @@ $(function() {
    })
 
    $('.gallery__item').lightcase();
+
+   $('.hamburger').on('click', function() {
+     $(this).toggleClass('is-active');
+     $('.top-line__nav').toggleClass('if-active');
+     $('.nav__item').toggleClass('if-active-item');
+   })
 });
